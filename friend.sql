@@ -18,13 +18,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `dfp50193_crud`
+-- Database: `senarai`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `students`
+-- Table structure for table `friend`
 --
 
 CREATE TABLE `friend` (
@@ -39,7 +39,7 @@ CREATE TABLE `friend` (
 --
 
 INSERT INTO `friend` (`id`, `name`, `no_matric`, `class`) VALUES
-(1, 'ARIESSA QASANDRA', 20, '5');
+(1, 'ARIESSA QASANDRA', '18DDT19F1004', '5');
 
 --
 -- Indexes for dumped tables
@@ -56,7 +56,7 @@ ALTER TABLE `friend`
 --
 
 --
--- AUTO_INCREMENT for table `students`
+-- AUTO_INCREMENT for table `friend`
 --
 ALTER TABLE `friend`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
