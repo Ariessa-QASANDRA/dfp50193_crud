@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.1
+-- version 5.1.0
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 15, 2021 at 04:59 AM
--- Server version: 10.4.21-MariaDB
--- PHP Version: 8.0.11
+-- Generation Time: Nov 15, 2021 at 05:30 AM
+-- Server version: 10.4.19-MariaDB
+-- PHP Version: 7.3.28
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -30,15 +30,15 @@ SET time_zone = "+00:00";
 CREATE TABLE `friend` (
   `id` int(11) NOT NULL,
   `name` varchar(100) NOT NULL,
-  `no_matric` varchar(50) NOT NULL,
+  `matric_no` varchar(50) NOT NULL,
   `class` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `students`
+-- Dumping data for table `friend`
 --
 
-INSERT INTO `friend` (`id`, `name`, `no_matric`, `class`) VALUES
+INSERT INTO `friend` (`id`, `name`, `matric_no`, `class`) VALUES
 (1, 'ARIESSA QASANDRA', '18DDT19F1004', '5');
 
 --
@@ -46,7 +46,7 @@ INSERT INTO `friend` (`id`, `name`, `no_matric`, `class`) VALUES
 --
 
 --
--- Indexes for table `students`
+-- Indexes for table `friend`
 --
 ALTER TABLE `friend`
   ADD PRIMARY KEY (`id`);
@@ -59,7 +59,7 @@ ALTER TABLE `friend`
 -- AUTO_INCREMENT for table `friend`
 --
 ALTER TABLE `friend`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
