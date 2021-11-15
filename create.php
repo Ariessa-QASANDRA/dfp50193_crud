@@ -9,9 +9,9 @@ $matric_err = $name_err = $class_err = $age_err = "";
 // Processing form data when form is submitted
 if($_SERVER["REQUEST_METHOD"] == "POST"){
     // Validate name
-    $input_matric = trim($_POST["matric"]);
+    $input_matric = trim($_POST["matric_no"]);
     if(empty($input_matric)){
-        $name_err = "Please enter a name.";
+        $name_err = "Please enter a matric.";
     } else{
         $matric = $input_matric;
     }
