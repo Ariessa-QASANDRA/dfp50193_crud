@@ -28,7 +28,7 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `friend` (
-  `id` int(11) NOT NULL,
+  `idStudent` int(11) NOT NULL,
   `name` varchar(100) NOT NULL,
   `matric_no` varchar(50) NOT NULL,
   `class` varchar(20) NOT NULL
@@ -38,7 +38,7 @@ CREATE TABLE `friend` (
 -- Dumping data for table `friend`
 --
 
-INSERT INTO `friend` (`id`, `name`, `matric_no`, `class`) VALUES
+INSERT INTO `friend` (`idStudent`, `name`, `matric_no`, `class`) VALUES
 (1, 'ARIESSA QASANDRA', '18DDT19F1004', '5');
 
 --
@@ -49,7 +49,7 @@ INSERT INTO `friend` (`id`, `name`, `matric_no`, `class`) VALUES
 -- Indexes for table `friend`
 --
 ALTER TABLE `friend`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`idStudent`);
 
 --
 -- AUTO_INCREMENT for dumped tables
@@ -59,7 +59,7 @@ ALTER TABLE `friend`
 -- AUTO_INCREMENT for table `friend`
 --
 ALTER TABLE `friend`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `idStudent` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
